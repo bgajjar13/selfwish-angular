@@ -1,0 +1,57 @@
+<app-header></app-header>
+<app-header-mobile></app-header-mobile>
+<div class="page-wrap">
+    <div class="inner-bg-sec cf" style="background-image: url(assets/images-nct/inner-heading-bg.jpg);">
+        <h1>Add Activity</h1>
+    </div>
+    <div class="login-signup-sec cf">
+        <div class="signup-outer cf">
+            <form>
+                <div class="form-group cf">
+                    <select class="form-control-inner selectpicker" title="Select Category">
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Barbecue</option>
+                      </select>
+                </div>
+                <div class="form-group cf">
+                    <input type="text" id="email" name="email" placeholder="Enter Activity Title" class="is-form-control">
+                </div>
+                <div class="form-group cf">
+                    <input type="text" id="contactnum" name="contactnum" placeholder="Enter Activity Location" class="is-form-control">
+                    <div class="show-hide-pass">
+                        <i class="icon-location-icon"></i>
+                    </div>
+                </div>
+                <div class="form-group cf">
+                    <input type="text" id="pass" name="pass" placeholder="Enter Activity Date" class="is-form-control">
+                    <div class="show-hide-pass">
+                        <i class="icon-calendar-r"></i>
+                    </div>
+                </div>
+                
+                <div class="form-group cf">
+                    <input type="text" id="pass" name="pass" placeholder="Enter Activity Time" class="is-form-control">
+                    <div class="show-hide-pass">
+                        <i class="icon-clock-icon"></i>
+                    </div>
+                </div>
+                <div class="form-group cf">
+                    <textarea class="is-form-control" id="desc" name="desc" rows="5" placeholder="Enter Description of What You re looking for."></textarea>
+                </div>
+                <div class="form-group cf">
+                    <div class="is-form-control is-my-upload">
+                        <span id="upload-attachment">Upload any image / gif / video</span>
+                        <i class="icon-upload-icon"></i>
+                        <input type="file" id="pass" name="pass" size="40" onchange="$('#upload-attachment').html($(this).val());">
+                    </div>
+                </div>
+                <div class="form-group cf">
+                    <button type="submit" class="main-btn md-btn w-100">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+<app-footer-mobile></app-footer-mobile>
